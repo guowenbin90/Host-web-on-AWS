@@ -15,7 +15,7 @@
 5. Browser check link: `ec2-Public-IPv4-DNS.compute-1.amazonaws.com` showing apache2 website
 
 # Connect FileZilla to EC2 instance to transfer/upload files
-## Virtual Hosts in Apache
+## Virtual Hosts in Apache2
 1. Register a domain name `guowenbin.com`. (I used `Namecheap.com` personally)
 2. `cd /etc/apache2/sites-available/`, modify `000-default.conf`
 3. `cd /var/www/html/`, update `index.html`
