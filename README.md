@@ -19,7 +19,12 @@
 1. Register a domain name `guowenbin.com`. (I used `Namecheap.com` personally)
 2. `cd /etc/apache2/sites-available/`, modify `000-default.conf`
     1. <VirtualHost *:80>
-    2. <VirtualHost *:443>
+    2. <VirtualHost *:443>  
+        `ServerName: guowenbin.com`  
+        `ServerAdmin: emailAddress`  
+        `SSLCertificateFile ~/personalWeb.crt`  
+	    `SSLCertificateKeyFile ~/server.key`  
+	    `SSLCertificateChainFile ~/personalWeb.ca-bundle`
     3. Log directory error: `No such file or directory: AH02291: Cannot access directory '/etc/apache2/$/home/ubuntu/log/`
     
         `mkdir /var/log/apache2`  
