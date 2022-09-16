@@ -18,9 +18,12 @@
 ## Virtual Hosts in Apache2
 1. Register a domain name `guowenbin.com`. (I used `Namecheap.com` personally)
 2. `cd /etc/apache2/sites-available/`, modify `000-default.conf`
-    1. <VirtualHost *:80>
+    1. <VirtualHost *:80>  
+        `ServerName: guowenbin.com`   
+        `ServerAlias www.guowenbin.com`  	
     2. <VirtualHost *:443>  
         `ServerName: guowenbin.com`  
+	`ServerAlias www.guowenbin.com` 
         `ServerAdmin: emailAddress`  
         `SSLCertificateFile ~/personalWeb.crt`  
 	    `SSLCertificateKeyFile ~/server.key`  
