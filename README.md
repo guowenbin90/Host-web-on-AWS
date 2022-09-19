@@ -5,7 +5,7 @@
     1. ssh: 22
     2. http: 80
     3. https: 443
-3. Create Keypair `personalWeb.pem` and Download to local
+3. Create Keypair `Personal-Web-KeyPair.pem` and Download to local
 ## SSH into the instance and install Apache2
 1. Terminal (local): `ssh -i "Personal-Web-KeyPair.pem" ubuntu@ec2-Public-IPv4-DNS.compute-1.amazonaws.com`
 2. Package update: `sudo apt-get update `
